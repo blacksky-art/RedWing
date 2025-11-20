@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: redwing-backend
+    restart: always
+    environment:
+      MONGODB_URL: mongodb+srv://allenjestin007:0aK2RuYEYy4gsfe3@cluster0.xxqvrb7.mongodb.net/RedWing
+      PORT: 8000
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    container_name: redwing-frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
