@@ -29,6 +29,7 @@ const defaultChecklist = [
 ];
 
 const flightSchema = new mongoose.Schema({
+
   flightNumber: {
     type: String,
     required: true,
@@ -41,16 +42,16 @@ const flightSchema = new mongoose.Schema({
     required: true
   },
 
-  filedBy: String,
-  filingTime: String,
-  departureLocation: String,
-  departureTime: String,
-  arrivalLocation: String,
-  estimatedArrivalTime: String,
+  filedBy: { type: String, trim: true },
+  filingTime: { type: Date },
+  departureLocation: { type: String, trim: true },
+  departureTime: { type: Date },
+  arrivalLocation: { type: String, trim: true },
+  estimatedArrivalTime: { type: Date },
 
   checklist: {
     type: [checklistItemSchema],
-    default: defaultChecklist
+    default: () => defaultChecklist.map(i => ({ ...i }))  // FIXED
   }
 
 }, { timestamps: true });

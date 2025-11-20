@@ -1,3 +1,11 @@
-# TODO for Replacing connection.js with MongoDB Connection
+# Containerization Using Docker
 
-- [ ] Update frontend/backend/connection.js to use MongoDB native driver with the provided connection string: mongodb+srv://allenjestin007:0aK2RuYEYy4gsfe3@cluster0.xxqvrb7.mongodb.net/
+## Steps to Complete
+
+- [x] Create backend/Dockerfile to containerize the backend service
+- [x] Create frontend/Dockerfile to build and serve the React app with nginx
+- [x] Create docker-compose.yml to orchestrate backend, frontend, and MongoDB services
+- [x] Build Docker images
+- [x] Install Docker Desktop (completed)
+- [x] Run docker-compose up to start the services
+- [ ] Test the application
