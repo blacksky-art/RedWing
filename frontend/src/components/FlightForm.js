@@ -69,8 +69,9 @@ export default function FlightForm({ onCreated }) {
         }}
       >
         <div>
-          <label>Flight Number:</label>
+          <label htmlFor="flightNumber">Flight Number:</label>
           <input
+            id="flightNumber"
             type="text"
             name="flightNumber"
             placeholder="e.g., F102"
@@ -80,8 +81,9 @@ export default function FlightForm({ onCreated }) {
         </div>
 
         <div>
-          <label>Filed By:</label>
+          <label htmlFor="filedBy">Filed By:</label>
           <input
+            id="filedBy"
             type="text"
             name="filedBy"
             placeholder="Officer name"
@@ -91,8 +93,9 @@ export default function FlightForm({ onCreated }) {
         </div>
 
         <div>
-          <label>Filing Time:</label>
+          <label htmlFor="filingTime">Filing Time:</label>
           <input
+            id="filingTime"
             type="datetime-local"
             name="filingTime"
             value={formData.filingTime}
@@ -101,8 +104,9 @@ export default function FlightForm({ onCreated }) {
         </div>
 
         <div>
-          <label>Departure Location:</label>
+          <label htmlFor="departureLocation">Departure Location:</label>
           <input
+            id="departureLocation"
             type="text"
             name="departureLocation"
             placeholder="City / Coordinates"
@@ -112,8 +116,9 @@ export default function FlightForm({ onCreated }) {
         </div>
 
         <div>
-          <label>Departure Time:</label>
+          <label htmlFor="departureTime">Departure Time:</label>
           <input
+            id="departureTime"
             type="datetime-local"
             name="departureTime"
             value={formData.departureTime}
@@ -122,8 +127,9 @@ export default function FlightForm({ onCreated }) {
         </div>
 
         <div>
-          <label>Arrival Location:</label>
+          <label htmlFor="arrivalLocation">Arrival Location:</label>
           <input
+            id="arrivalLocation"
             type="text"
             name="arrivalLocation"
             placeholder="City / Coordinates"
@@ -133,8 +139,9 @@ export default function FlightForm({ onCreated }) {
         </div>
 
         <div>
-          <label>Estimated Arrival Time:</label>
+          <label htmlFor="estimatedArrivalTime">Estimated Arrival Time:</label>
           <input
+            id="estimatedArrivalTime"
             type="datetime-local"
             name="estimatedArrivalTime"
             value={formData.estimatedArrivalTime}

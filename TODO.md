@@ -1,3 +1,4 @@
-# TODO for Replacing connection.js with MongoDB Connection
+# TODO: Test Backend
 
-- [ ] Update frontend/backend/connection.js to use MongoDB native driver with the provided connection string: mongodb+srv://allenjestin007:0aK2RuYEYy4gsfe3@cluster0.xxqvrb7.mongodb.net/
+- [x] Fix import in backend/tests/flightRoutes.test.js (change from "../server.js" to "../index.js")
+- [ ] Run npm test in backend directory
